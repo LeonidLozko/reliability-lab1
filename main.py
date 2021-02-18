@@ -16,7 +16,7 @@ time_fail = 801 # вхідний час на відмови
 times.sort()
 T_average = sum(times) / len(times)
 
-h = (times[-1] - times[0]) / 10
+h = times[-1] / 10
 fi_list = [0]
 P_list = [1]
 i = 0

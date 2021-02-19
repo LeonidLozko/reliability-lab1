@@ -27,7 +27,8 @@ for k in range(1, 11):
         counter += 1
         i += 1
     fi_list.append(counter / (h * len(times)))
-    P_list.append(counter / len(times))
+    Q = counter1 / len(times)
+    P_list.append(1 - Q)
     if P_list[k - 1] > gamma >= P_list[k]:
         index = k
 d = (P_list[index - 1] - gamma) / (P_list[index - 1] - P_list[index])

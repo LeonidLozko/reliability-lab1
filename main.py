@@ -21,10 +21,12 @@ fi_list = [0]
 P_list = [1]
 i = 0
 index = 0
+counter1 = 0
 for k in range(1, 11):
     counter = 0
     while i < len(times) and times[i] <= k * h + times[0]:
         counter += 1
+        counter1 += 1
         i += 1
     fi_list.append(counter / (h * len(times)))
     Q = counter1 / len(times)
